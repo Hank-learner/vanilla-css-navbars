@@ -8,3 +8,5 @@
 > dark theme for the webpage is highly encouraged
 >
 > create new branches for new navbars
+>
+> the nav-bars should be responsive for all sizes
