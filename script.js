@@ -1,15 +1,27 @@
-// Selection of HTML objects
-const burger = document.querySelector('.burger i');
-const nav = document.querySelector('.nav');
+'use strict';
 
-// Defining a function
-function toggleNav() {
-    burger.classList.toggle('fa-bars');
-    burger.classList.toggle('fa-times');
-    nav.classList.toggle('nav-active');
-}
+  let refOffset = 0;
+  const bannerHeight = 77;
+  const bannerWrapper = document.querySelector('.banner-wrapper');
+  const banner = document.querySelector('.banner');
 
-// Calling the function after click event occurs
-burger.addEventListener('click', function() {
-    toggleNav();
-});
+  const handler = () => {
+    const newOffset = window.scrollY || window.pageYOffset;
+
+    if (newOffset > bannerHeight) {
+      if (newOffset > refOffset) {
+        bannerWrapper.classList.remove('animateIn');
+        bannerWrapper.classList.add('animateOut');
+      } else {
+        bannerWrapper.classList.remove('animateOut');
+        bannerWrapper.classList.add('animateIn');
+      }
+      banner.style.background = 'rgba(162, 197, 35, 0.6)';
+      refOffset = newOffset;
+    } else {
+      banner.style.backgroundColor = 'rgba(162, 197, 35, 1)';
+    }
+  };
+
+  window.addEventListener('scroll', handler, false);
+  
