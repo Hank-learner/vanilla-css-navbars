@@ -5,7 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background-color: #333333;
+  background-color: #070404;
 }
 header {
   left: 0;
@@ -14,13 +14,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #232323;
-  color: #ccc;
-  border: solid white 5px;
+  background: #e77474;
+  color: rgb(0, 0, 0);
+  
 }
 
 .logo {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .nav {
@@ -35,7 +35,7 @@ header {
 }
 
 .navlink a {
-  color: #ccc;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.2em;
 }
