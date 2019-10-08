@@ -10,3 +10,7 @@
 > create new branches for new navbars
 >
 > the nav-bars should be responsive for all sizes
+>
+>external sources of icons maybe used, images or icons in hardcopy is highly encouraged
+>
+>makeing the site fully hardcode as possible without any external dependencies for the webpage to run
