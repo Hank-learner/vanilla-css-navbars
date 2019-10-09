@@ -20,6 +20,7 @@ nav {
   background: #232323;
   color: #ccc;
   line-height: 70px;
+  z-index: 999;
 }
 
 nav .container {
