@@ -18,6 +18,10 @@ header {
   color: rgb(0, 0, 0);
   
 }
+footer{
+  
+  bottom: 0;
+}
 
 .logo {
   letter-spacing: 2px;
@@ -33,9 +37,26 @@ header {
   list-style: none;
   margin: 0;
 }
-
+.container
+{
+  position: relative;
+  text-align: center;
+  padding: 1em;
+  color: #ebdbdb;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  background: #666364;
+  margin-left: 100px;
+  margin-top: 50px;
+}
 .navlink a {
   color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.navlink a:hover {
+  color: rgb(63, 224, 198);
   text-decoration: none;
   font-size: 1.2em;
 }
